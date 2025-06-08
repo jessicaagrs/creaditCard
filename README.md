@@ -64,7 +64,7 @@ git clone https://github.com/jessicaagrs/creaditCard.git
 
 ```
 
-> [ACESSAR APP WEB](https://whatsappnoadd.vercel.app/)
+> [ACESSAR APP WEB](https://creadit-card-weld.vercel.app/)
 
 <!-- ## Como rodar os testes
 
