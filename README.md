@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>Credit Card</h1> 
 
-## Getting Started
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Radix UI](https://img.shields.io/badge/radix%20ui-161618.svg?style=for-the-badge&logo=radix-ui&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Status do Projeto: :heavy_check_mark: <!-- > :heavy_check_mark:--> Concluído <!-- > :warning:-->
+
+### Tópicos 
+
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto-pencil)
+
+:small_blue_diamond: [Funcionalidades](#funcionalidades-wrench)
+
+:small_blue_diamond: [Layout](#layout-dash)
+
+<!-- :small_blue_diamond: [Pré-requisitos](#pré-requisitos) -->
+
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+
+<!-- :small_blue_diamond: [Dependencias e libs utilizadas](#dependencias-e-libs-utilizadas-books) -->
+
+## Descrição do projeto :pencil:
+
+<p align="justify">
+  Aplicativo para facilitar o controle de gastos com cartão de crédito, nem sempre o app oferece uma interface intuitiva para obter o quanto se pode gastar, por isso a necessidade de uma ferramenta como essa.
+</p>
+
+## Funcionalidades :wrench:
+
+:heavy_check_mark: Visual minimalista.
+
+:heavy_check_mark: Ver quanto é possível utilizar (limite de exemplo 800,00).
+
+:heavy_check_mark: Adicionar compras parceladas.
+
+:heavy_check_mark: Obter valor da fatura do mes atual, considerando o limite disponível	no banco e as compras parceladas.
+
+## Layout :dash:
+
+
+![N|Solid](https://iili.io/F3ObBp4.png)
+
+<!-- ## Pré-requisitos
+
+:warning: [Node](https://nodejs.org/en/download/)
+
+...
+
+Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação  -->
+
+## Como rodar a aplicação :arrow_forward:
+
+No terminal clone o projeto: 
+
+```
+git clone https://github.com/jessicaagrs/creaditCard.git
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> [ACESSAR APP WEB](https://whatsappnoadd.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!-- ## Como rodar os testes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Coloque um passo a passo para executar os testes
 
-## Learn More
+```
+$ npm test, rspec, etc 
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Casos de Uso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
 
-## Deploy on Vercel
+## JSON :floppy_disk:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Usuários: 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+|name|email|password|token|avatar|
+| -------- |-------- |-------- |-------- |-------- |
+|Lais Lima|laislima98@hotmail.com|lais123|true|https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9-U_HbQAipum9lWln3APcBIwng7T46hdBA42EJv8Hf6Z4fDT3&usqp=CAU|
+
+... 
+
+Se quiser, coloque uma amostra do banco de dados 
+
+## Iniciando/Configurando banco de dados
+
+Se for necessário configurar algo antes de iniciar o banco de dados insira os comandos a serem executados  -->
+
+<!-- ## Dependencias e libs utilizadas :books:
+
+- [JSPDF](https://artskydj.github.io/jsPDF/docs/jsPDF.html) -->
+
+<!-- ## Resolvendo Problemas :exclamation:
+
+Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos.  -->
+
+<!-- ## Tarefas em aberto
+
+Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
+
+:memo: Tarefa 1 
+
+:memo: Tarefa 2 
+
+:memo: Tarefa 3  -->
+
+## Licença 
+
+Copyright :copyright: 2025 - Jessica Aguiar
