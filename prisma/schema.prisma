@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model PurchaseInstallment {
+  id                 Int      @id @default(autoincrement())
+  description        String   @db.VarChar(255)
+  totalValue         Float
+  numberInstallments Int
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  installments Installment[]
+}
+
+model Installment {
+  id        Int      @id @default(autoincrement())
+  value     Float
+  dueDate   DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  purchaseInstallmentId Int
+  purchaseInstallment   PurchaseInstallment @relation(fields: [purchaseInstallmentId], references: [id])
+}
+
+model Invoice {
+  id                      Int      @id @default(autoincrement())
+  availableLimit          Float //limite disponível
+  totalLimit              Float    @default(2700) //limite total
+  spendingLimit           Float    @default(800) //limite de gastos
+  amountUsedSpendingLimit Float //valor utilizado do limite de gastos
+  valueAvailableUse       Float //valor disponível para uso
+  amountPay               Float //valor a pagar
+  monthReference          String   @db.VarChar(7) @unique
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+}
