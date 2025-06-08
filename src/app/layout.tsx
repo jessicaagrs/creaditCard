@@ -1,9 +1,8 @@
-import type { Metadata } from 'next';
-import { Roboto, Poppins } from 'next/font/google';
-import './globals.css';
 import { CreditCardContextProvider } from '@/context/creditCardContext';
+import type { Metadata } from 'next';
+import { Poppins, Roboto } from 'next/font/google';
 import { Toaster } from 'sonner';
-import Head from 'next/head';
+import './globals.css';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -28,13 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-BR'>
-      <Head>
+      <body className={`${roboto.variable} ${poppins.variable} antialiased`}>
         <link
           rel='icon'
-          href='/icon.svg'
+          href='/icon.ico'
         />
-      </Head>
-      <body className={`${roboto.variable} ${poppins.variable} antialiased`}>
         <Toaster />
         <CreditCardContextProvider>{children}</CreditCardContextProvider>
       </body>
